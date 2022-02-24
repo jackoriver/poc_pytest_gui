@@ -20,6 +20,10 @@ class LoginPage(BasePage):
         return self.find_element(*self.PASSWORD)
 
     @property
+    def get_error_login_message(self):
+        return self.find_element(*self.ERROR_MESSAGE)
+
+    @property
     def get_login_button(self):
         return self.find_element(*self.LOGIN_BUTTON)
 
